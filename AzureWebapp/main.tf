@@ -1,10 +1,14 @@
-provider "azurerm" {
-  subscription_id = "f028aaae-0d35-4768-bdf6-4b0c4714c086"
-  client_id       = "873915ea-390d-45ff-8ab6-57df10273214"
-  client_secret   = "6EV=1UoVM7cYA8kivzWm:jbqaXscQS.-"
-  tenant_id       = "4a6decda-ecbb-4f16-ac12-cf0c06331a9c"
+provider "azure_rm" {
+  version = "3.0.0"
+
+  subscription_id = "f4cc3e63-ae81-4c68-9d78-d189798870b4"
+  client_id       = "07b54aec-e7df-43e1-ab0b-33c704349694"
+  client_secret   = "UkG8Q~gGRSzznn5SOH~Wknt3CRzYpPfhjCnmVdxv"
+  tenant_id       = "846b3d51-7341-4e24-932c-c0faeb6300a0"
+
   features {}
 }
+
 
 resource "azurerm_resource_group" "example1" {
   name     = "example-resources"
